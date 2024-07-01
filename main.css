@@ -1,15 +1,147 @@
 body {
+  /* width: 100%; */
     width: 1920px;
     background-image: url(img/ima-elemento4-fondo.jpeg);
     background-repeat: no-repeat;
     background-size: 1920px;
+   margin: 0%;
+
    
 }
 
 .contenedor {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto 1200px auto;
+    grid-template-rows: repeat(5,auto);
+}
+.contenedor2{
+  display: flex;
+  column-gap: 12px;
+
+}
+.contenedor3{
+  background: linear-gradient(45deg, #12CBE8, #b6e2ec); 
+ 
+
+  height: 1205px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding-left: 160px;
+  padding-right: 160px;
+justify-content: center;
+
+}
+.contenedor3-1{
+  h1{
+    font-family: "satashi-bold";
+    font-size: 64px;
+    color: black;
+  }
+}
+.contenedor3-2{
+  background-image: url(img/ima-elemento3-5-a-1.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 15px;
+  width: 500px;
+  height: 440px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 10%;
+  h1{
+    font-family: "satashi-bold";
+    font-size: 64px;
+  }
+  h4{
+    font-family: "satoshi-regular";
+    font-size: 20px;
+    color: white;
+    padding-left: 12px;
+  }
+  p {
+    font-family: "roboto";
+    font-size: 20px;
+  }
+}
+.fondo1{
+  background-image: url(img/ima-elemento3-5-a-1.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 15px;
+  width: 500px;
+  height: 440px;
+
+}
+.fondo2{
+  background-image: url(img/ima-elemento3-5-a-1.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 15px;
+  width: 500px;
+  height: 440px;
+
+}
+.fondo3{
+  background-image: url(img/ima-elemento3-5-a-3.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 15px;
+  width: 500px;
+  height: 440px;
+
+}
+
+.contenedor3-2-a{
+  display: flex;
+  justify-content: space-between;
+  width: 475px;
+  height: 53px;
+  border: 1px solid white;
+  border-radius: 50px;
+  margin: 12px;
+  align-items: center;
+  h2{
+    padding-left: 12px;
+    padding-right: 12px;
+    font-family: "satoshi-bold";
+    font-size: 20px;
+    color: white;
+  }
+  
+}.contenedor3-2-b{
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 280px;
+ 
+  h1{
+    padding-top: 30%;
+    text-align: center;
+    font-family: "satoshi-bold";
+    font-size: 31px;
+  }
+  p{ 
+    margin-top: -5%;
+    text-align: center;
+    font-family: "satoshi";
+    font-size: 24px;
+    color: white;
+  }
+}.contenedor3-2-c{
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 50px;
+  justify-content: end;
+  h4{
+    padding-left: 12px;
+    text-align: left;
+    font-family: "satoshi-regulsr";
+    font-size: 20px;
+    color: white;
+  }
+  
 }
 
 
@@ -23,7 +155,7 @@ body {
   }
   
   .elemento1-1 {
-    grid-column: 1/2;
+    width: 960px;
     padding-left: 160px;
     h1{
       font-family: "satoshi-black";
@@ -43,16 +175,18 @@ body {
       }  
   }  
 .elemento2 {
+
   background-color: white;
   margin-top: 71px;
     padding-top: 1em;
     padding-left: 160px;
     display: grid;
     grid-template-columns: 788px;
-    grid-template-rows: 247px 300px 274px;
+    grid-template-rows: 349px 300px 274px;
     row-gap: 22px;
 }
 .elemento2-1{
+  margin-top: 102px;
   display: flex;
   align-items: center;
     background-repeat: no-repeat;
@@ -66,6 +200,7 @@ h1{
 }
 }
 .elemento2-2{
+
 border: 2px solid #12CBE8;
 border-radius: 30px;
 height: 300px;
@@ -101,17 +236,21 @@ p{
 .elemento3 {
  background-color: white;
   margin-top: 71px;
+
     padding-right: 160px;
-    border: 2px solid #de020200;
+    border: 6px solid #de020200;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 60px 452px 60px 372px ;
+    grid-template-rows: 162px 452px 60px 372px ;
     gap: 4px;
 
   }
   
   .elemento3-1 {
+    
+    margin-top: 102px;
     height: 60px;
+
     background-color: #fefefe;
     grid-column: span 2; /* Ocupa dos columnas */
     display: flex;
@@ -201,6 +340,9 @@ p{
     grid-column: span 1; /* Ocupa una columna */
     grid-row: span 1;
   }
+ 
+  
+  
   .elemento3-6 { /*     TARJETA */
     border-radius: 11px;
     background-image: url("img/ima-elemento3-5-7.jpeg");
@@ -213,7 +355,8 @@ p{
     margin-top: 2%;
     margin-left: 2%;
     margin-right: 2%;
-    width: 376px;
+    width: 330px;
+    height: 37px;
     align-items: center;
     padding-left: 15px;
     padding-right: 15px;
@@ -261,57 +404,81 @@ p{
  
   
 .elemento4 {
-margin-left: 160px;
-margin-right: 160px;
+
     display: grid;
     grid-column: 1/3;
-    grid-template-columns: 1130px 485px;
-    grid-template-rows: 4000px;
-    word-wrap: break-word;
+    grid-template-columns: 1290px 497px;
+    grid-template-rows: 5000px;
+     word-wrap: break-word; 
     row-gap: 12px;
     column-gap: 12px;
     
 }
 .elemento4-1{
-  padding-left: 12px;
+  margin-left: 160px;
+  margin-top: 250px;
+     padding-left: 12px;
+     padding-right: 30px;
     background-color: white;
-    padding-right: 30px;
+    
+    
 
 }
 .elemento4-2{
   margin-left: 12px;
-  margin: 0%;
-  padding: 12px;
+  margin-top: 250px;
+  padding-left: 20px;
+  padding-right: 20px;
   background-color: white;
   border: 1px solid #12CBE8; 
   display: flex;
   flex-direction: column;
-
+  
   h4{
     font-family: "satoshi-bold";
     font-size: 20px;
+
   }
-  p{
-    font-family: "roboto";
-    font-size: 16px;
-    color: black;
-    padding-top: -20px;
-  }
+  
   ul li {
    
     font-family: "roboto";
     font-size: 16px;
     color: black;
+    
+  }
+  p{
+    font-family: "roboto";
+    font-size: 16px;
   }
   
     
-}.elemento4-3{
+}
+#colorAzul{
+  color: #12CBE8;
+}
+#colorRojo{
+  color: #991A00;
+}
+#tam{
+  font-size: 52px;
+}
+.elemento4-3{
+  margin-top: 10%;
   width: 100%;
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
   
     
+}
+.barra{
+  margin: 0%;
+  display: grid;
+  grid-column: 1/4;
+  height: 176px;
+  background-color: #F15C32;
+  /* background-image: url("img/barra.jpeg"); */
 }
 .elemento5{
 padding-left: 160px;
@@ -319,10 +486,35 @@ padding-right: 160px;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: repeat(3, 1fr);
-    border: 1px solid #2600ffa4;
+
     background-color: black;
 }.elemento5-1{
    text-align: center;
     grid-column: 1/5;
+    h1{
+      font-family: "satoshi-bold";
+      font-size: 128px;
+    }
+    
+
+}
+.elemento5-2{
+  h3{
+    font-family: "roboto-regular";
+    font-size: 24px;
+    color: white;
+  }
+  h2{
+    font-family: "roboto-medium";
+    font-size: 46px;
+    color: white;
+  }
+  p{
+    font-family: "roboto";
+    font-size: 20px;
+    color: white;
+    line-height: 2em;
+  }
+  
 
 }
